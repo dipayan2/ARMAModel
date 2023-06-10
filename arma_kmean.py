@@ -113,3 +113,6 @@ def estimate_models():
 
 
 estimate_models()
+for i in range(nr_model):
+	print("Model Num: ", i)
+	print(models[i].summary())
