@@ -19,7 +19,6 @@ utilData['cpuScore'] = utilData['cpuload']*utilData['cpufreq']/1400000
 utilData['cpuF'] = utilData['cpufreq']/1000000
 
 
-
 ################################
 ## model
 ##
@@ -27,77 +26,99 @@ nr_sample = 2000
 train = utilData.iloc[0:nr_sample]
 test  = utilData.iloc[nr_sample:]
 
-nr_chunk_sample = 10
-nr_chunk = int(nr_sample / nr_chunk_sample)
-chunk_model = []
+nr_chunk_sample = 10            # number of samples in a chunk
+nr_chunk = int(nr_sample / nr_chunk_sample) # number of chunks
+chunk_model = []                # which model chunk_model[i] belongs to
 
-nr_model = 7
+nr_model = 7                    # number of models
+nr_model_switch_padding = 20    # number of padding samples between model switch
 models = []
 
-nr_kmean_epoch = 60
-pr_kmean_update = 0.1
+nr_kmean_epoch = 60             # number of epoch in k-mean
+pr_kmean_update = 0.1           # learning rate of k-mean
 
 #model_order = (2, 0, [2])
-model_order = (3, 0, 0)
+model_order = (3, 1, 1)
 endog_key = 'cpuload'
 exog_key = 'cpuF'
 
-def get_sample0(m):
-    # sample indexes whose chunk_model is not m
-    index = [i for i in range(nr_sample) if chunk_model[int(i / nr_chunk_sample)] != m]
-    y = train[endog_key].copy()
-    x = train[exog_key].copy()
-    y.loc[index] = 0
-    x.loc[index] = 0
-    return y, x
 
-def get_sample1(m):
-    # sample indexes whose chunk_model is not m
+def diff(series):   # difference operation
+    res = []
+    for t in range(len(series)-1):
+        if np.isnan(series[t]) or np.isnan(series[t+1]):
+            res.append(0)
+        else:
+            res.append(series[t+1] - series[t])
+    return res
+
+
+def accu(series):   # accumulation operation
+    res = []
+    sum = 0
+    for t in (range(len(series))):
+        sum = sum + series[t]
+        res.append(sum)
+    return res
+
+
+def get_sample(m):  # get sample for model m
     y, x = [], []
     for i in range(nr_chunk):
-        if chunk_model[i] == m:
-            for j in range(i*nr_chunk_sample, (i+1)*nr_chunk_sample):
-                y.append(train.loc[j, endog_key]) 
-                x.append(train.loc[j, exog_key]) 
-            for j in range(nr_chunk_sample):
-                y.append(0) 
-                x.append(0) 
-    return y, x
+        # copy sample
+        if chunk_model[i] != m:
+            continue
+        j = i + 1   # find the last contiguous mode
+        while j < nr_chunk and chunk_model[j] == m:
+            j = j + 1
+        for k in range(i*nr_chunk_sample, j*nr_chunk_sample):
+            y.append(train.loc[k, endog_key]) 
+            x.append(train.loc[k, exog_key ])
 
-def get_sample2(m):
-    # sample indexes whose chunk_model is not m
-    index = [i for i in range(1, nr_sample) if chunk_model[int(i / nr_chunk_sample)] != m]
-    y = train[endog_key].copy()
-    x = train[exog_key].copy()
-    y.loc[index] = np.nan
-    x.loc[index] = np.nan
-    return y.interpolate(), x.interpolate()
-    # return y.interpolate('spline', order=2), x.interpolate('spline', order=2)
+        # padding
+        if j + 1 >= nr_chunk:
+            continue
+        for k in range(nr_model_switch_padding):
+            y.append(np.nan)
+            x.append(np.nan)
+            #x.append(x[-1]) # find a better value 
+    return y, x
 
 
 def fit_models():
-    get_sample = get_sample1 # find a way to use unrelated chunks of samples
     for m in range(nr_model):
         y, x = get_sample(m)
-        model = ARIMA(y, order=model_order).fit()
+        y = diff(y) # length of y will by decreated by 1
+        #x.pop()     # to mathch the length of x and y
+        x = diff(x)
+        if len(y) < nr_chunk_sample:
+            continue
+        #model = ARIMA(y, order=model_order).fit()
+        model = ARIMA(y, order=model_order, exog=x).fit()
         models.append(model)
         print('mse', model.mse)
 
+
 def init_chunks():
-    random.seed(1)
     for m in range(nr_chunk):
         chunk_model.append(random.randrange(nr_model))
 
+
 def update_chunks():
     for c in range(nr_chunk):
-        if random.random() > pr_kmean_update: #update slowly
+        if random.random() > pr_kmean_update: # update slowly
             continue
 
         mses = []
         for m in range(nr_model):
             start, end = c*nr_chunk_sample, (c+1)*nr_chunk_sample
-            res = models[m].apply(train[endog_key][start:end], refit=False)
-            #res = models[m].apply(train[endog_key][start:end], exog=train[exog_key][start:end], refit=False)
+            y = list(train[endog_key][start:end])
+            x = list(train[exog_key ][start:end])
+            y = diff(y) # length of y will by decreated by 1
+            #x.pop()     # to mathch the length of x and y
+            x = diff(x)
+            #res = models[m].apply(y, refit=False)
+            res = models[m].apply(y, exog=x, refit=False)
             mses.append(res.mse)
         best = np.argmin(mses)
         chunk_model[c] = best
@@ -105,14 +126,17 @@ def update_chunks():
 
 def estimate_models():
     # k-mean
+    random.seed(1)
     init_chunks()
     for i in range(nr_kmean_epoch):
         print('[', i, '/', nr_kmean_epoch, ']--------------')
         fit_models()
         update_chunks()
 
+def summary_models():
+    for i in range(nr_model):
+        print("Model Num: ", i)
+        print(models[i].summary())
 
 estimate_models()
-for i in range(nr_model):
-	print("Model Num: ", i)
-	print(models[i].summary())
+summary_models()
