@@ -1,0 +1,1000 @@
+   67  ls
+   68  cd energyd/
+   69  ls
+   70  make
+   71  cd ..
+   72  cd een
+   73  cd energyd/
+   74  ls
+   75  cd build/
+   76  ls
+   77  cd bin/
+   78  ls
+   79  ./energyd 
+   80  cd ..
+   81  ls
+   82  cd ..
+   83  cd libenergy/
+   84  ls
+   85  cd build/
+   86  ls
+   87  cd bin/
+   88  ls
+   89  ./libenergy.so 
+   90  cd ..
+   91  ls
+   92  cd ,,
+   93  cd ..
+   94  ls
+   95  cat Exec.cpp 
+   96  g++ Exec.cpp 
+   97  la
+   98  ./a.out 
+   99  sudo apt-get install pktstat
+  100  pkstat
+  101  pktstat
+  102  sudo pktstat
+  103  cd ..
+  104  cd EnergyAwareNetwork/
+  105  ls
+  106  cd energyd/
+  107  ls
+  108  cd build/
+  109  ls
+  110  cd bin/
+  111  ls
+  112  sudo ./energyd 
+  113  sudo su 
+  114  sudo pktstat
+  115  cd ~
+  116  LS
+  117  ls
+  118  cd /sys/
+  119  ls
+  120  cd dev
+  121  ls
+  122  cd ..
+  123  ls
+  124  cd class/
+  125  ls
+  126  cd devfreq
+  127  ls
+  128  cd ,,
+  129  cd ..
+  130  ls
+  131  cd ..
+  132  ls
+  133  cd devices/
+  134  ls
+  135  cd system/
+  136  ls
+  137  cd memory/
+  138  ls
+  139  cd memory0/
+  140  ls
+  141  cd subsystem
+  142  ls
+  143  cd ..
+  144  ls
+  145  cd system/
+  146  cd cpu/
+  147  ls
+  148  cd cpufreq/
+  149  ls
+  150  cd ..
+  151  s
+  152  d .
+  153  cd ..
+  154  ls
+  155  cd class/
+  156  ls
+  157  cd devfreq
+  158  ls
+  159  cd ..
+  160  cd powercap/
+  161  ls
+  162  cd ..
+  163  ls
+  164  cd ..
+  165  ls
+  166  cd kernel/
+  167  ls
+  168  cd ..
+  169  la
+  170  ls
+  171  pwd
+  172  ls
+  173  cd Desktop/
+  174  ls
+  175  cd EnergyAwareNetwork/
+  176  ls
+  177  cd linux-5.15.72/
+  178  ls
+  179  vim Makefile 
+  180  sudo apt-get install vim 
+  181  ls
+  182  vim Makefile 
+  183  ls
+  184  cd ..
+  185  ls
+  186  git pull
+  187  git log 
+  188  cd ..
+  189  ls
+  190  nvidia smi
+  191  lspci -vnnn | perl -lne 'print if /^\d+\:.+(\[\S+\:\S+\])/' | grep VGA
+  192  nvidia-smi
+  193  sudo apt install nvidia-utils-520
+  194  nvidia-smi
+  195  sudo apt autoremove 
+  196  nvidia-smi
+  197  sudo apt-get purge nvidia-* 
+  198  sudo apt install nvidia-cuda-toolkit
+  199  sudo reboot 
+  200  sudo apt-get install openssh-server
+  201  sudo systemctl enable ssh
+  202  sudo systemctl enable ssh --now
+  203  sudo systemctl start ssh
+  204  ifconfig
+  205  iocinfig
+  206  ipconfig
+  207  ip addr -all
+  208  ip addr -a
+  209  ip 
+  210  ip address
+  211  nvidia-smi
+  212  ls
+  213  cd Desktop/
+  214  ls
+  215  cd EnergyAwareNetwork/
+  216  ls
+  217  pwd
+  218  clear 
+  219  pwd 
+  220  sudo apt-get install xrdp
+  221  logout
+  222  ls
+  223  cd Desktop/
+  224  ls
+  225  git clone --depth 1 https://github.com/hardkernel/linux -b odroid-5.4.y
+  226  ls
+  227  cd linux/
+  228  ls
+  229  ls -a 
+  230  rm -rf .git/
+  231  ld
+  232  ls -a 
+  233  git init
+  234  git add .
+  235  git commit -m "commit"
+  236  git config --gloabl user.email "dipayan2@illinois.edu"
+  237  git config --global user.email "dipayan2@illinois.edu"
+  238  git config --global user.name "Dipayahn M"
+  239  git commit -m "commit"
+  240  git remote add origin https://github.com/dipayan2/odroidxu5.4.git
+  241  git branch -M main
+  242  git push -u origin main
+  243  git push 
+  244  git push -u origin main
+  245  cd ..
+  246  cd linux/
+  247  s
+  248  ls
+  249  cd include/
+  250  ls
+  251  cd net/
+  252  cd netfilter/
+  253  ls
+  254  cd ipv4/
+  255  ls
+  256  cd ..
+  257  ls
+  258  cd ,,
+  259  ls
+  260  cd ..
+  261  ls
+  262  cd kernel/
+  263  ls
+  264  cd ..
+  265  cd net/
+  266  ls
+  267  cd netfilter/
+  268  ls
+  269  cd ..
+  270  ls
+  271  cd cd include/
+  272  ls
+  273  cd include/
+  274  ls
+  275  cd linux/
+  276  ls
+  277  cd netfilter
+  278  l;s
+  279  ls
+  280  cd ..
+  281  cd netfilter_ipv
+  282  cd netfilter_ipv4/
+  283  ls
+  284  cd ..
+  285  cd net/ipv4/
+  286  ls
+  287  cd netfilter/
+  288  ls
+  289  cat ipt_ECN.c 
+  290  ls
+  291  cd ..
+  292  ls
+  293  cd .
+  294  cd ..
+  295  ls
+  296  git log
+  297  ls
+  298  cd ..
+  299  ls
+  300  history
+  301  ls
+  302  mv linux/ odroidxu4-5.4/
+  303  ls
+  304  ls 
+  305  cd Desktop/
+  306  ls
+  307  cd odroidxu4-5.4/
+  308  ls
+  309  git log 
+  310  ls 
+  311  history | grep git 
+  312  pip install gpustat
+  313  pip3 install gpustat
+  314  sudo apt-get install pip
+  315  pip install gpustat
+  316  gpustat
+  317  sudo apt install gpustat
+  318  gpustat 
+  319  gpustat -h
+  320  gpustat -i 1
+  321  nvidia-smi
+  322  lspci | grep VGA
+  323  cat /etc/os-release 
+  324  sudo apt install nvidia-utils-525
+  325  nvidia-smi
+  326  sudo ubuntu-drivers devices
+  327  sudo apt install nvidia-driver-525-open
+  328  sudo apt-get update 
+  329  sudo reboot
+  330  who
+  331  who -b -u
+  332  last
+  333  ls
+  334  cd Desktop/
+  335  ls
+  336  cd ..
+  337  ls
+  338  cd Documents/
+  339  ls
+  340  cd ..
+  341  cd Downloads/
+  342  ls
+  343  nvidia-smi
+  344  lspci | grep VGA
+  345  lspci
+  346  nvidia-smi
+  347  cd /sys/
+  348  ls
+  349  cd class/
+  350  ls
+  351  cd devfreq
+  352  ls
+  353  cd ..
+  354  ls
+  355  cd devices/
+  356  ls
+  357  cd system/
+  358  ls
+  359  cd memory/
+  360  ls
+  361  cd power/
+  362  ls
+  363  cat runtime_
+  364  cat runtime_usage 
+  365  cd ..
+  366  ls
+  367  cd memory0/
+  368  ls
+  369  cat online 
+  370  cat state 
+  371  lsci 
+  372  dmesg 
+  373  sudo dmesg 
+  374  sudo reboot
+  375  sudo dmesg
+  376  sudo apt remove --purge '^nvidia-.*'
+  377  dmesg 
+  378  sudo dmesg
+  379  sudo apt remove --purge '^libnvidia-.*'
+  380  sudo apt updtae && sudo apt upgrade 
+  381  sudo apt update && sudo apt upgrade 
+  382  sudo apt install --upgrade linux-modules-nvidia-515-generic
+  383  sudo rebot
+  384  sudo reboot
+  385  nvidia-smi
+  386  sudo apt install nvidia-utils-515
+  387  nvidia-smi
+  388  nvidia-smi --help
+  389  nvidia-smi stat
+  390  nvidia-smi stats
+  391  nvidia-smi -h
+  392  unmae -r
+  393  uname -r
+  394  nvidia-smi power-hint
+  395  nvidia-smi power-hint -mc
+  396  nvidia-smi power-hint -t
+  397  nvidia-smi power-hint -t 3
+  398  nvidia-smi
+  399  lsa
+  400  ls
+  401  cd snap/
+  402  ls
+  403  d firefox/
+  404  cd firefox/
+  405  ls
+  406  nvidia-smi
+  407  nvidia-smi -l
+  408  cd 
+  409  cd /sys/
+  410  ls
+  411  cd bus/
+  412  s
+  413  ls
+  414  cd acpi/
+  415  ls
+  416  cd drivers/
+  417  ls
+  418  cd thermal/
+  419  ls
+  420  cd ..
+  421  cd battery/
+  422  ls
+  423  cd ..
+  424  ls
+  425  cd devices/
+  426  ls
+  427  sudo dmesg 
+  428  sudo dmesg | nvidia
+  429  sudo dmesg | grep nvi
+  430  ls
+  431  cd ..
+  432  ls
+  433  cd ..
+  434  ls
+  435  cd me
+  436  cd memory/
+  437  ks
+  438  ls
+  439  cd drivers/
+  440  ls
+  441  cd ../...
+  442  cd ..
+  443  ls
+  444  cd ..
+  445  lks
+  446  ls
+  447  cd ..
+  448  ls
+  449  cd hypervisor/
+  450  ls
+  451  cd ..
+  452  ls
+  453  cd kernel/
+  454  ls
+  455  cat profiling 
+  456  cd ..
+  457  ls
+  458  cd power/
+  459  ls
+  460  cat mem_sleep 
+  461  cd ..
+  462  ls
+  463  cd firmware/
+  464  ls
+  465  cd dmi/
+  466  ls
+  467  cd tables/
+  468  ls
+  469  cat DMI 
+  470  cd ..
+  471  ls
+  472  cd ..
+  473  ls
+  474  cd dev
+  475  ls
+  476  cd ..
+  477  ls
+  478  cd class/
+  479  ls
+  480  cd mem/
+  481  ls
+  482  cd ..
+  483  ls
+  484  nvidia-smi
+  485  nvidia-smi --query-gpu=gpu_name,gpu_bus_id,vbios_version --format=csv
+  486  nvidia-smi -ac
+  487  nvidia-smi -ac <MEM clock, Graphics clock>
+  488  nvidia-smi -q -d SUPPORTED_CLOCKS
+  489  nvidia-smi -q -d SUPPORTED_CLOCKS > out
+  490  vim out 
+  491  nvidia-smi -i 0 -q -d CLOCK
+  492  nvidia-smi topo --matrix
+  493  nvidia-smi -i 0 -q -d MEMORY,UTILIZATION,POWER,CLOCK,COMPUTE
+  494  ls
+  495  cat out 
+  496  rm -rf out 
+  497  ls
+  498  cd Documents/
+  499  ls
+  500  cd ../Desktop/
+  501  ls
+  502  cd odroidxu4-5.4/
+  503  ls
+  504  cd ..
+  505  pwd
+  506  ls
+  507  tar -xvf DS000-BN-00001-r22p2-00rel0.tar 
+  508  ls
+  509  cd DS000-BN-00001-r22p2-00rel0/
+  510  ls
+  511  ./armds-2022.2.sh 
+  512  sudo su
+  513  ls 
+  514  cd Desktop/
+  515  ls
+  516  cd DS000-BN-00001-r22p2-00rel0/
+  517  ls
+  518  cd y/
+  519  ls
+  520  cd sw/
+  521  ls
+  522  cd streamline/
+  523  ls
+  524  cd bin/
+  525  ls
+  526  cd linux
+  527  ls
+  528  cd arm
+  529  ls
+  530  cd Desktop/
+  531  ls
+  532  cd DS000-BN-00001-r22p2-00rel0/
+  533  ls
+  534  cd y/
+  535  ls
+  536  cd sw/
+  537  ls
+  538  cd streamline/
+  539  \ls
+  540  ls -lt
+  541  cd gator/
+  542  ls
+  543  cd daemon/
+  544  ls
+  545  cd linux/
+  546  ls
+  547  cd ..
+  548  ls
+  549  cd ..
+  550  ks
+  551  ls
+  552  cd streamline/
+  553  ls
+  554  cd bin/
+  555  ls
+  556  cd linux
+  557  ls
+  558  cd arm
+  559  ls
+  560  clear
+  561  ls
+  562  cd Documents/
+  563  ls
+  564  cd ../Desktop/
+  565  ls
+  566  cd odroidxu4-5.4/
+  567  ls
+  568  git log
+  569  cd ..
+  570  ls
+  571  cd DS000-BN-00001-r22p2-00rel0/\
+  572  cd DS000-BN-00001-r22p2-00rel0/
+  573  ls
+  574  cd y
+  575  ls
+  576  cd sw
+  577  ls
+  578  cd streamline/
+  579  ls
+  580  cd bin/linux-64/
+  581  ls
+  582  cd ../../gator/
+  583  \s
+  584  ls
+  585  cd ../..
+  586  cd ..
+  587  ls
+  588  cd ../..
+  589  ls
+  590  cd ..
+  591  ls
+  592  cd Downloads/
+  593  ls
+  594  cd ../Documents/
+  595  ls
+  596  cd ../Desktop/odroidxu4-5.4/
+  597  s
+  598  ls
+  599  ls -lt
+  600  git remote
+  601  git url
+  602  git --help
+  603  ls 
+  604  cd drivers/
+  605  ls
+  606  cd devfreq/
+  607  ls
+  608  cd ../..
+  609  ;s
+  610  cd ..
+  611  ls
+  612  cd ..
+  613  l
+  614  pwd
+  615  cd ..
+  616  ls
+  617  cd dipayan2/
+  618  s
+  619  ls
+  620  cd snap/
+  621  ls
+  622  cd ,,
+  623  cd ..
+  624  ls
+  625  sudo su 
+  626  ipaddr 
+  627  ip addr 
+  628  ls
+  629  uname -r
+  630  cd /sys/
+  631  ls
+  632  cd devices/
+  633  ls
+  634  cd ..
+  635  ls
+  636  cd class/
+  637  ls
+  638  cd devfreq
+  639  ;s
+  640  ls
+  641  cd ..
+  642  ls
+  643  cd ..
+  644  l
+  645  ls
+  646  clear
+  647  ls
+  648  cd Desktop/
+  649  ls
+  650  cd odroidxu5.4/
+  651  ls
+  652  git pull
+  653  ls
+  654  git log
+  655  ls
+  656  cd linux-5.4.87/
+  657  ls
+  658  cd drivers/devfreq/
+  659  ls
+  660  vim devfreq.c 
+  661  ls
+  662  cd ..
+  663  ls
+  664  cd ..
+  665  ls
+  666  cd ..
+  667  ls
+  668  cd ..
+  669  ls
+  670  cd osldvfs/
+  671  ls
+  672  git pull
+  673  ls
+  674  cd ..
+  675  cd odroidxu5.4/
+  676  git pull
+  677  ls
+  678  cd linux-5.4.87/
+  679  ls
+  680  logout
+  681  ls
+  682  uname -r
+  683  uname
+  684  uname -a 
+  685  cat /etc/os-release 
+  686  ls
+  687  cd Desktop/
+  688  ls
+  689  cd DS000-BN-00001-r22p2-00rel0/
+  690  ls
+  691  vim readme.html 
+  692  cd y/
+  693  ls
+  694  cd sw/
+  695  ls
+  696  cd streamline/
+  697  ls
+  698  cd ..
+  699  ls
+  700  cd ..
+  701  ls
+  702  cd,,
+  703  ls
+  704  cd ../../
+  705  ls
+  706  cd odroidxu5.4/
+  707  cd linux-5.4.87/
+  708  ls
+  709  git pull
+  710  cd ..
+  711  ls
+  712  pwd
+  713  ls
+  714  unzip linux-5.4.87-218.zip 
+  715  ls
+  716  cd linux-5.4.87-218/
+  717  ls
+  718  cp -r firmware ../odroidxu5.4/linux-5.4.87/
+  719  cp -r firmware/* ../odroidxu5.4/linux-5.4.87/firmware/
+  720  cd ../odroidxu5.4/linux-5.4.87/
+  721  ls
+  722  cd firmware/
+  723  ls
+  724  cd edid/
+  725  cd ..
+  726  ls
+  727  git add firmware/
+  728  git status
+  729  git commit -m "Updating firmware files"
+  730  git push
+  731  ls
+  732  cd Desktop/
+  733  vim PowerMonitor.py
+  734  python3 PowerMonitor.py 
+  735  sudo su
+  736  ls
+  737  cd linux-5.4.87-218/
+  738  ls
+  739  cd ..
+  740  ls
+  741  ls -lt
+  742  rm -rf linux-5.4.87-218.zip 
+  743  rm -rf linux-5.4.87-218/
+  744  ls
+  745  cd EnergyAwareNetwork/
+  746  ls
+  747  git log
+  748  ls
+  749  git log --raw
+  750  ls
+  751  uname -r
+  752  cat /etc/os-release 
+  753  cd /sys/class/devfreq/
+  754  ls
+  755  sudo su 
+  756  ls
+  757  cd ~/Desktop/
+  758  ls
+  759  logout
+  760  nautilus
+  761  ls
+  762  cd Desktop/
+  763  ls
+  764  vim TimerPowMon.py 
+  765  mkdir MonSoonHack
+  766  ls *.py
+  767  mv -r *.py MonSoonHack/
+  768  mv *.py MonSoonHack/
+  769  ls
+  770  cd MonSoonHack/
+  771  ls
+  772  cd ..
+  773  cd osldvfs/
+  774  git pull
+  775  ls
+  776  cd ..
+  777  ls
+  778  mv MonSoonHack osldvfs/
+  779  ls
+  780  cd osldvfs/
+  781  ls
+  782  git status
+  783  git add MonSoonHack/
+  784  git commit -m "Bypass the timer limit in sampleEngine monsoon"
+  785  git push 
+  786  git log
+  787  ls
+  788  cd ..
+  789  l
+  790  cd DS000-BN-00001-r22p2-00rel0/
+  791  ls
+  792  cd y/
+  793  ls
+  794  cd sw/
+  795  ls
+  796  cd streamline/
+  797  ks
+  798  ls
+  799  cd gator/
+  800  ls
+  801  vim gator_me.py 
+  802  ls
+  803  echo $PS1
+  804  export PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[00m\]:\[\033[01;36m\]\W\[\033[00m\]\$ '
+  805  echo $PROMPT_COMMAND
+  806  ls
+  807  logout
+  808  ls
+  809  cd Desktop/
+  810  ls
+  811  cd osldvfs/
+  812  ls
+  813  vim /etc/bash.bashrc 
+  814  sudo vim /etc/bash.bashrc 
+  815  source /etc/bash.bashrc 
+  816  ls
+  817  cd KernelCode/
+  818  ls
+  819  cd ..
+  820  ls
+  821  exit
+  822  ls
+  823  cd Desktop/
+  824  ks
+  825  ls
+  826  cd osldvfs/
+  827  ls
+  828  source /etc/bash.bashrc 
+  829  ls
+  830  cd Do
+  831  cd Desktop/
+  832  ls
+  833  cd osldvfs/
+  834  ls
+  835  git pull
+  836  git log
+  837  sudo shutdown 
+  838  ip addr
+  839  ls
+  840  cd Downloads/
+  841  ls
+  842  cd ..
+  843  ls
+  844  cd Desktop/
+  845  ls
+  846  git clone git@github.com:dipayan2/osldvfs.git
+  847  cd osldvfs/
+  848  ls
+  849  vim Testfle
+  850  git add Testfle
+  851  git commit -m "Check"
+  852  git push
+  853  ip addr
+  854  ls
+  855  pwd
+  856  ls
+  857  cd KernelCode/
+  858  ls
+  859  cd ..
+  860  ls
+  861  vim .gitignore 
+  862  cd KernelCode/
+  863  vim linux-3.10.103/.gitignore 
+  864  cd ..
+  865  ls
+  866  mv linux-5.4.87/ osldvfs/KernelCode/linux-5.4.87/
+  867  cd osldvfs/KernelCode/linux-5.4.87/
+  868  ls
+  869  vim .gitattributes 
+  870  cp ../linux-3.10.103/.gitignore ./
+  871  vim .gitignore 
+  872  cd ..
+  873  git status 
+  874  cd ../..
+  875  ls
+  876  echo "# odroidxu5.4" >> README.md
+  877  git init
+  878  git add README.md
+  879  git commit -m "first commit"
+  880  git branch -M main
+  881  git remote add origin git@github.com:dipayan2/odroidxu5.4.git
+  882  git push -u origin main
+  883  ls
+  884  cd odroidxu4-5.4/
+  885  ls
+  886  git log
+  887  ls
+  888  rm -rf ./*
+  889  ls
+  890  git status
+  891  git commit -a
+  892  ls
+  893  cd ..
+  894  l
+  895  rm -rf odroidxu4-5.4/
+  896  ls
+  897  git clone git@github.com:dipayan2/odroidxu5.4.git
+  898  ls
+  899  cd odroidxu5.4/
+  900  ls
+  901  cd .
+  902  cd ..
+  903  ls
+  904  mv osldvfs/KernelCode/linux-5.4.87/ odroidxu5.4/
+  905  ls
+  906  cd osldvfs/
+  907  cd ..
+  908  cd odroidxu5.4/
+  909  ls
+  910  git status
+  911  git add linux-5.4.87/
+  912  git status
+  913  ls
+  914  cd linux-5.4.87/
+  915  vim .gitignore 
+  916  cd ..
+  917  git commit -m "Working Kernel"
+  918  git push 
+  919  cd ../osldvfs/
+  920  ls
+  921  cd KernelCode/
+  922  ls
+  923  ip addr
+  924  pip install Monsoon
+  925  cd ..
+  926  ls
+  927  python
+  928  python3
+  929  sudo python3
+  930  sudo su
+  931  ls
+  932  python 
+  933  python3
+  934  pip
+  935  pip install keras
+  936  pip install tensorflow
+  937  python3
+  938  pip install tensorrt
+  939  python3
+  940  vim LSTMCode.py
+  941  python3 LSTMCode.py 
+  942  pip install tensorflow-gpu
+  943  python3 LSTMCode.py 
+  944  vim LSTMCode.py
+  945  python3 LSTMCode.py 
+  946  ls
+  947  cd Desktop/
+  948  ls
+  949  git clone https://github.com/dipayan2/ARMAModel.git
+  950  ls
+  951  cd ARMAModel/
+  952  ls
+  953  cp ../../LSTMCode.py ./
+  954  git add LSTMCode.py 
+  955  git commit -m "LSTM basic code"
+  956  git push 
+  957  cd ..
+  958  rm -rf ARMAModel/
+  959  git clone git@github.com:dipayan2/ARMAModel.git
+  960  cd ARMAModel/
+  961  cp ../../LSTMCode.py ./
+  962  git add LSTMCode.py 
+  963  git commit -m "ML code"
+  964  git push
+  965  ip addr
+  966  ls
+  967  python3 LSTMCode.py 
+  968  cat /etc/os-release 
+  969  sudo apt autoremove nvidia* --purge
+  970  ubuntu-drivers devices
+  971  sudo ubuntu-drivers autoinstall
+  972  sudo apt install --only-upgrade ubuntu-drivers-common 
+  973  sudo apt install nvidia-driver-525
+  974  reboot
+  975  sudo reboot
+  976  ip addr
+  977  nvidia-smi
+  978  sudo apt install nvidia-cuda-toolkit
+  979  ls
+  980  python3 LSTMCode.py 
+  981  nvcc --version
+  982  reboot
+  983  sudo apt update && sudo apt upgrade
+  984  nvcc --version
+  985  sudo apt install libcudnn11
+  986  sudo apt install libcudnn8
+  987  python LSTMCode.py 
+  988  python3 LSTMCode.py 
+  989  cd /usr/lib/cuda/nvvm/
+  990  ls
+  991  cd libdevice
+  992  ls
+  993  export XLA_FLAGS=--xla_gpu_cuda_data_dir=/usr/lib/cuda
+  994  cd ~/Desktop/
+  995  cd a
+  996  cd ARMAModel/
+  997  python3 LSTMCode.py 
+  998  ls
+  999  vim LSTMCode.py 
+ 1000  python3 LSTMCode.py 
+ 1001  ls
+ 1002  python3 LSTMCode.py 
+ 1003  ls
+ 1004  cd Desktop/
+ 1005  ls
+ 1006  cd ARMAModel/
+ 1007  ls
+ 1008  jupyter-notebok
+ 1009  pip install notebook
+ 1010  jupyter-notebook
+ 1011  jupyter notebook --no-browser --port=8080
+ 1012  jupyter notebook --no-browser --port=8085
+ 1013  exit
+ 1014  logoit
+ 1015  logout
+ 1016  exit
+ 1017  cd Desktop/ARMAModel/
+ 1018  jupyter notebook --no-browser --port=8080
+ 1019  jupyter notebook --no-browser --port=8085
+ 1020  python -m pip install -U matplotlib
+ 1021  pip install -U matplotlib
+ 1022  pip install pandas
+ 1023  pip install statsmodel
+ 1024  pip install statsmodels
+ 1025  pip install scikit-fda
+ 1026  sudo apt-get install python-cffi
+ 1027  sudo pip install cffi==1.5.0
+ 1028  pip install scikit-fda
+ 1029  sudo apt install python3-cffi
+ 1030  pip install scikit-fda
+ 1031  ls
+ 1032  cd Desktop/
+ 1033  ls
+ 1034  cd ARMAModel/
+ 1035  ls
+ 1036  jupter-notebook --no-browser --port=8080
+ 1037  jupyter-notebook --no-browser --port=8080
+ 1038  cd Desktop/ARMAModel/
+ 1039  jupyter-notebook --no-browser --port=8080
+ 1040  ls
+ 1041  cd Desktop/
+ 1042  ls
+ 1043  cd osldvfs/
+ 1044  cd ..
+ 1045  cd odroidxu5.4/
+ 1046  ls
+ 1047  git log
+ 1048  logout
+ 1049  ls
+ 1050  cd Desktop/
+ 1051  ls
+ 1052  cd ARMAModel/
+ 1053  ls
+ 1054  python LSTMCode.py 
+ 1055  python3 LSTMCode.py 
+ 1056  history 
+ 1057  export XLA_FLAGS=--xla_gpu_cuda_data_dir=/usr/lib/cuda
+ 1058  python3 LSTMCode.py 
+ 1059  cd ..
+ 1060  l
+ 1061  ld
+ 1062  ls
+ 1063  cat history > HistoryCommandtoRunCUDA
+ 1064  cat history
+ 1065* history >
+ 1066  history > HistoryCommandtoRunCUDA
