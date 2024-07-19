@@ -3,6 +3,9 @@ import numpy as np
 from numpy import array
 from numpy import argmax
 from numpy import array_equal
+import tensorflow as tf
+physical_devices = tf.config.list_physical_devices('GPU')
+tf.config.experimental.set_memory_growth(physical_devices[0], enable=True)
 from keras.utils import to_categorical
 from keras.models import Model
 from keras.layers import Input
